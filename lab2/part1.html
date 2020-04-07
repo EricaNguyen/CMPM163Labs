@@ -12,6 +12,51 @@
 		<script src="../three.js-master/build/three.js"></script>
 		<script>
 			// Our Javascript will go here.
+            var scene = new THREE.Scene();
+            var camera = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight, 0.1, 1000);
+
+            var renderer = new THREE.WebGLRenderer();
+            renderer.setSize(window.innerWidth, window.innerHeight);
+            document.body.appendChild(renderer.domElement);
+
+            //add cubes
+            var geometry = new THREE.BoxGeometry();
+            var material = new THREE.MeshBasicMaterial( {color: 0xeb8fb5} ); //pink cube
+            var cube = new THREE.Mesh(geometry, material);
+            
+            var geometry2 = new THREE.BoxGeometry();
+            var material2 = new THREE.MeshBasicMaterial( {color: 0x7c3dba} ); //purple cube
+            var cube2 = new THREE.Mesh(geometry2, material2);
+            geometry2.translate( -3, -3, 0 );
+            
+            var geometry3 = new THREE.BoxGeometry();
+            var material3 = new THREE.MeshBasicMaterial( {color: 0x97d6e8} ); //blue cube
+            var cube3 = new THREE.Mesh(geometry3, material3);
+            geometry3.translate( 3, 0, 0 );
+            var i = 1;
+            
+            scene.add(cube);
+            scene.add(cube2);
+            scene.add(cube3);
+            camera.position.z = 5; //this moves the camera towards the viewer
+            
+            //render cube
+            function animate() {
+                requestAnimationFrame(animate);
+                renderer.render(scene, camera);
+                
+                //rotate pink cube
+                geometry.rotateX(0.01);
+                geometry.rotateY(0.01);
+                
+                //move purple cube up
+                geometry2.translate( 0, 0.01, 0 );
+                
+                //scale blue cube
+                i += 0.00001;
+                geometry3.scale( 1, i, i );
+            }
+            animate();
 		</script>
 	</body>
 </html>
