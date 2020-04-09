@@ -53,11 +53,11 @@
             loader.load('cat.glb', function (gltf) {
                 scene.add(gltf.scene);
                 gltf.scene.position.x = 20;
+                gltf.scene.position.y = 55;
                 gltf.scene.rotation.y = -5;
                 gltf.scene.scale.x = 1;
                 gltf.scene.scale.y = 1;
                 gltf.scene.scale.z = 1.3;
-                gltf.scene.position.y = 55;
             }, function (xhr) {
                 console.log((xhr.loaded / xhr.total * 100) + '% loaded' );
             }, function (error) {
@@ -68,12 +68,11 @@
             loader.load('rabbit.glb', function (gltf) {
                 scene.add(gltf.scene);
                 gltf.scene.position.x = 15;
-                gltf.scene.rotation.y = -5;
-                //gltf.scene.rotation.z = 2;
+                gltf.scene.position.y = 85;
+                gltf.scene.rotation.y = -6;
                 gltf.scene.scale.x = 0.5;
                 gltf.scene.scale.y = 0.5;
                 gltf.scene.scale.z = 0.5;
-                gltf.scene.position.y = 85;
             }, function (xhr) {
                 console.log((xhr.loaded / xhr.total * 100) + '% loaded' );
             }, function (error) {
