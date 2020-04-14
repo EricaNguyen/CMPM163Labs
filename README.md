@@ -8,3 +8,5 @@ video: [lab2](https://drive.google.com/file/d/1v80JFHKpnjn0SIYwIFtktsyKr1GgK6_p/
 -The first cube on the left is cube with a green specular highlight made with three.js phong material
 
 -The second cube from the left is a transparent cube with yellow emisssion made with three.js lambert material
+
+-The third cube from the left is a cube with color interpolation made with my own shaders, using colors peach and hot pink

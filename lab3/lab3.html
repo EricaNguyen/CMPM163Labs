@@ -73,15 +73,19 @@
       		var material2 = new THREE.MeshLambertMaterial( { color: 0x666666, emissive: 0xfcba03, opacity: 0.5, transparent: true } );
       		var cube2 = new THREE.Mesh( geometry2, material2 );
      		scene.add(cube2);
+            cube2.position.x = -2;
             
-            //add cube 3
-            var geometry1, material1, mesh1;
+            //add cubes 3 and 4
+            var geometry1, material1, mesh1; //vars for cube 3
+            var geometry4, material4, mesh4; //vars for cube 4
 
             function addCoolCube() {
                 if(count == 2) {
+                    //add cube 3
                     let uniforms = {
-                        colorB: {type: 'vec3', value: new THREE.Color(0xACB6E5)},
-                        colorA: {type: 'vec3', value: new THREE.Color(0x74ebd5)}
+                        colorC: {type: 'vec3', value: new THREE.Color(0x661eb3)},
+                        colorB: {type: 'vec3', value: new THREE.Color(0xffefd1)},
+                        colorA: {type: 'vec3', value: new THREE.Color(0xe88287)}
                     };
 
                     geometry1 = new THREE.BoxGeometry(1, 1, 1);
@@ -92,8 +96,26 @@
                         precision: "mediump"});
 
                     mesh1 = new THREE.Mesh(geometry1, material1);
-                    mesh1.position.x = 2;
+                    mesh1.position.x = 1;
                     scene.add(mesh1);
+                    
+                    //add cube 4
+                    let uniforms2 = {
+                        colorC: {type: 'vec3', value: new THREE.Color(0x3183bd)},
+                        colorB: {type: 'vec3', value: new THREE.Color(0x0044ff)},
+                        colorA: {type: 'vec3', value: new THREE.Color(0x34edfa)}
+                    };
+
+                    geometry4 = new THREE.BoxGeometry(1, 1, 1);
+                    material4 =  new THREE.ShaderMaterial({
+                        uniforms: uniforms2,
+                        fragmentShader: fshader,
+                        vertexShader: vshader,
+                        precision: "mediump"});
+                        
+                    mesh4 = new THREE.Mesh(geometry4, material4);
+                    mesh4.position.x = 3;
+                    scene.add(mesh4);
                 }	
             }
 
@@ -114,6 +136,11 @@
                 if(geometry1) {
                     geometry1.rotateX(0.01);
                     geometry1.rotateY(0.01);
+                }
+                
+                if(geometry4) {
+                    geometry4.rotateX(0.01);
+                    geometry4.rotateY(0.01);
                 }
                 
 				renderer.render(scene, camera);
