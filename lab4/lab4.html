@@ -23,11 +23,8 @@
             var geometry1, material1, mesh1;
             function addTextureShaderCube() {
                 if(count == 2) {
-                    let uniforms = {
-                        colorB: {type: 'vec3', value: new THREE.Color(0xACB6E5)},
-                        colorA: {type: 'vec3', value: new THREE.Color(0x74ebd5)}
-                        };
-                    
+                    var uniforms = {texture1: { type: "t", value: THREE.ImageUtils.loadTexture("156.jpg")}};
+
                     geometry1 = new THREE.BoxGeometry(1, 1, 1);
                     material1 =  new THREE.ShaderMaterial({
                         uniforms: uniforms,
@@ -36,7 +33,7 @@
                         precision: "mediump"});
 
                     mesh1 = new THREE.Mesh(geometry1, material1);
-                    mesh1.position.x = 4;
+                    mesh1.position.x = 2;
                     scene.add(mesh1);
                 }
             }
@@ -47,7 +44,7 @@
             var count = 0;
             var loader = new THREE.FileLoader();
             var fshader, vshader;
-            //load vertex shader
+            
             loader.load('shaders/vertexShader.vert',
                 // onLoad callback
                 function (data) {
@@ -64,7 +61,7 @@
                 function (err) {
                     console.error('An error happened');
                 });
-            //load fragment shader
+
             loader.load('shaders/fragmentShader.frag',
                 // onLoad callback
                 function (data) {
@@ -82,6 +79,7 @@
                     console.error('An error happened');
                 });
 			
+            
 			// setup the cube with texture and normal map
             var geometry = new THREE.BoxGeometry();
             var texture = THREE.ImageUtils.loadTexture("176.jpg");
@@ -89,12 +87,13 @@
             var material = new THREE.MeshPhongMaterial({map: texture, normalMap: normMap});
       		var cube = new THREE.Mesh(geometry, material);
      		scene.add(cube);
+            cube.position.x -= 2;
             
             //setup the 2nd cube with only texture
             material = new THREE.MeshPhongMaterial( { map: texture });
             var cube2 = new THREE.Mesh(geometry, material);
             scene.add(cube2);
-            cube2.position.x -= 2;
+            cube2.position.x -= 4;
             
             //setup the 3rd cube
             texture = THREE.ImageUtils.loadTexture("171.jpg");
@@ -102,7 +101,6 @@
             material = new THREE.MeshPhongMaterial({map: texture, normalMap: normMap});
       		cube3 = new THREE.Mesh(geometry, material);
      		scene.add(cube3);
-            cube3.position.x += 2;
 
 
 			// add the light
