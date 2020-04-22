@@ -16,8 +16,8 @@ video: [lab3](https://drive.google.com/file/d/1xnUWgztpeoFR3ib15U4wUwX_iNl-c0vL/
 -The fourth cube is a rainbow cube made with my own shaders, using the color white as a base
 
 ## lab4
-a. x = u * 8 (round down)
+a. x = u * 8 
 
-b. y = v * 8 (round down)
+b. y = v * 8 
 
-c. (x, y) = (u*8, v*8) = (3, 2), therefore the color is white
+c. (x, y) = (0.375 * 8, 0.25 * 8) = (3, 2), therefore the color is white
