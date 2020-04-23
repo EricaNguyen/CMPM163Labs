@@ -16,6 +16,24 @@ video: [lab3](https://drive.google.com/file/d/1xnUWgztpeoFR3ib15U4wUwX_iNl-c0vL/
 -The fourth cube is a rainbow cube made with my own shaders, using the color white as a base
 
 ## lab4
+video: [lab4] (https://drive.google.com/file/d/17oYznkBdISTJ3uzKYn7pYYPeJOj0x5Lv/view?usp=sharing)
+
+-1st cube from the left is cube made with only a wooden texture using three.js
+
+-2nd cube from the left is cube made with a wooden texture and a matching normal map using three.js
+
+-3rd cube is a cube with a pinkish texture and a brick-square normal map using three.js
+
+-4th cube is a cube with a mossy texture made with own shaders.
+
+-5th cube is a cube with a 2x2 tiled wooden texture made with own shaders. I was able to create the tiling effect by first
+taking a look in the fragment shader at the x and y values of vUv, which was passed in from the vertex shader. If the values 
+were over 0.5, the texture pattern would repeat from earlier coordinates. Then, I scaled the texture down by dividing 
+vUv by 0.5, to create the 2x2 tiles.    
+
+
+Question 24:
+
 a. x = u * 8 
 
 b. y = v * 8 
