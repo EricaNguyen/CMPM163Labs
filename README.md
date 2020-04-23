@@ -16,7 +16,7 @@ video: [lab3](https://drive.google.com/file/d/1xnUWgztpeoFR3ib15U4wUwX_iNl-c0vL/
 -The fourth cube is a rainbow cube made with my own shaders, using the color white as a base
 
 ## lab4
-video: [lab4] (https://drive.google.com/file/d/17oYznkBdISTJ3uzKYn7pYYPeJOj0x5Lv/view?usp=sharing)
+video: [lab4](https://drive.google.com/file/d/17oYznkBdISTJ3uzKYn7pYYPeJOj0x5Lv/view?usp=sharing)
 
 -1st cube from the left is cube made with only a wooden texture using three.js
 
