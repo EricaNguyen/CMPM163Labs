@@ -45,4 +45,4 @@ video: [lab5](https://drive.google.com/file/d/1DkxfmCL6Vi5QLyd6G9j2HLYHizpV1UpQ/
 
 I chose to do Part 1 for this lab.
 
-For this lab, I created particles of varying sizes that change from yellow to pink to blue. I changed the skybox to be a galaxy sky, and made the sun pink to better complement the colors of the skybox. I added models for buildings, a rocket, a ramp, crystals, and gummy bears. I also changed the driving track. I edited the materials for the player, cart, hills, and crystals.
+For this lab, I created particles of varying sizes that change from yellow to pink to blue. I changed the skybox to be a galaxy sky, and made the sun pink to better complement the colors of the skybox. I added models for buildings, a rocket, crystals, and gummy bears. I also added preset props such as a ramp and bowling pins, and changed the driving track. I edited the materials for the player, cart, hills, and crystals.
