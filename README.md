@@ -63,3 +63,12 @@ area light- only works when baking a light map. It shines in all directions to o
 ### iii. <br>
 Real life pearl earring vs my pearl made in unity: <br>
 ![](lab6/IMG_1390.jpg) ![](lab6/my_pearl.PNG)
+
+### iv. <br>
+For the pearl, I used the standard specular material so that it would be very shiny. I set both the albedo and the specular color to white. I also set the smoothness to about 0.5 to mimic the look of a pearl in real life.
+
+### v. <br>
+For one texture, I used purple puffballs. For another texture, I used a wooden block pattern.
+
+### vi. <br>
+I added an ocean skybox.
