@@ -49,7 +49,7 @@ For this lab, I created particles of varying sizes that change from yellow to pi
 
 ## lab6
 ### i. <br>
-screenshot:
+screenshot: ![](lab6/screenshot.PNG)
 
 ### ii. <br>
 point light- behaves like a bare lightbulb. How it illuminates objects in the scene depends on the light's position. This light shines in every direction, so the rotation of the light doesn't matter.
@@ -59,3 +59,7 @@ spotlight- behaves like a flashlight. It shines light in a certain direction, an
 directional light- behaves like the sun. It shines light in a certain direction, and it affects all the objects in the scene. The position of the light does not matter.
 
 area light- only works when baking a light map. It shines in all directions to one side of a rectangular plane.
+
+### iii. <br>
+Real life pearl earring vs my pearl made in unity: <br>
+![](lab6/IMG_1390.jpg) ![](lab6/my_pearl.PNG)
