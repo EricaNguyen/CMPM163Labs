@@ -72,3 +72,8 @@ For one texture, I used purple puffballs. For another texture, I used a wooden b
 
 ### vi. <br>
 I added an ocean skybox.
+
+## lab 7
+video: [lab7](https://drive.google.com/file/d/1_-_KQftdrlNwHEdYvgvU-EvNTXhDdHB_/view?usp=sharing)
+
+In this scene, I created an island with mountains and a rocky shore. Both of these were made with planes using a modified version of the noise disorted mesh from the tutorial. The tutorial on the wave shader was used to created the surrounding ocean, which has waves that lap over the shore. There are clouds in the sky created with the noise disorted mesh from the tutorial. The skybox is a dark blue night sky, with a blue directional light to match the scene. Bubbles rising from the ocean were created using my own material. The material made use of a map that would add a rainbow swirl effect in order to mimic the look of a real bubble. A light post from Unity's presets was added to the rocky shore and shone a yellow spotlight on some of the bubbles in order to highlight them. 
