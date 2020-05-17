@@ -1664,7 +1664,7 @@ PrefabInstance:
     - target: {fileID: 8342685825623211646, guid: 7a19c492b7234da449d26f2f33dfeb57,
         type: 3}
       propertyPath: m_Name
-      value: water
+      value: shore
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a19c492b7234da449d26f2f33dfeb57, type: 3}
