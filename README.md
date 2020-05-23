@@ -82,3 +82,6 @@ Partner's response: <br>
 i) part 2 <br>
 ii) challenging part was understanding how to manipulate code in order to change positions and scale model the way I want and  implementing shader <br>
 iii) it was interesting to see that you could create a wave just by manipulating plane
+
+## lab 8
+Generated city based on tutorial: ![](lab8/city1.png)
