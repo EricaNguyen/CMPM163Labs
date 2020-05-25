@@ -87,3 +87,5 @@ iii) it was interesting to see that you could create a wave just by manipulating
 Generated city based on tutorial: ![](lab8/city1.png)
 Real city inspiration (Venice): ![](lab8/venice.png)
 My generated city based on inspiration: ![](lab8/city2.png)
+
+Explanation: Water was added to the scene to make the city look like Venice. The spacing between buildings is randomized so that some buildings would be right next to each other while other buildings would be far apart to make room for canals. Some models were grouped together in ways that made sense. For instance, a patio with a table, umbrella, and chairs all appear together as one object. Bridges were also placed above water level randomly.
