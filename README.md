@@ -85,3 +85,5 @@ iii) it was interesting to see that you could create a wave just by manipulating
 
 ## lab 8
 Generated city based on tutorial: ![](lab8/city1.png)
+Real city inspiration (Venice): ![](lab8/venice.png)
+My generated city based on inspiration: ![](lab8/city2.png)
