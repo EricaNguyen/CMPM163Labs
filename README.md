@@ -89,3 +89,6 @@ Real city inspiration (Venice): ![](lab8/venice.png)
 My generated city based on inspiration: ![](lab8/city2.png)
 
 Explanation: Water was added to the scene to make the city look like Venice. The spacing between buildings is randomized so that some buildings would be right next to each other while other buildings would be far apart to make room for canals. Some models were grouped together in ways that made sense. For instance, a patio with a table, umbrella, and chairs all appear together as one object. Bridges were also placed above water level randomly.
+
+### partner check-in <br>
+To create this city, my partner generated 5 objects using the Three.js library. A dark colored plane for the street surface, a colored cube to populate the street plane with nested looping and randomized heights, a plane with a sand texture applied, a plane using a customized shader to simulate moving waves, and a “skybox” cube with seamless textures applied along all faces with the camera placed inside to simulate a starry night sky. What I found interesting about my partner's city was that it looked like a beachside city. During the lab, we did not help each other.
